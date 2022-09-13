@@ -1,0 +1,42 @@
+.navigation {
+    position: fixed;
+    right: -20vw;
+    width: 20vw;
+    background-color: white;
+    height: 100vh;
+    z-index: 4;
+}
+
+.close-btn-container {
+    display: flex;
+    height: 5rem;
+    padding-right: 2rem;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
+
+.navigation-close-btn:hover {
+    filter: brightness(50%);
+}
+
+.nav-list li {
+    color: inherit;
+    padding: 2rem 5rem;
+}
+
+#product-list > li {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 2rem 6rem;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
+}

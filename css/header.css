@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+:root{
+	--primary-text-color: #212529;
+	--secondary-text-color: white;
+	--primary-color: white;
+	--secondary-color: #EB2529;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--primary-text-color);
+	font-size: 1.8rem;
+	font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.desktop {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.desktop {
+		display: initial;
+	}
+}
+
+a:visited {
+	text-decoration: none;
+	color: var(--primary-text-color)
+}
+
+.header {
+	height: 10rem;
+	display: grid;
+	grid-template-columns: auto 1fr 1fr;
+	padding: 5px 20px;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+}
+
+.header_logo {
+	height: 87px;
+}
+
+header nav.center {
+	text-align: center;
+}
+
+header nav a {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+.header_nav_btn {
+	font-weight: 700;
+	padding: 1rem;
+	color: var(--secondary-text-color);
+	border-radius: 2.5rem;
+	transition: all 0.3s linear;
+	width: 5rem;
+}
+
+.header_nav_btn:hover {
+	color: red;
+	font-size: scale(2);
+}
+
+
+.header nav.right {
+	text-align: right;
+	display: block;
+}
+
+.header nav.right a {
+	margin: 0 1rem;
+	padding: 0 2rem;
+}
+
+.nav-button:first-child {
+	background: var(--secondary-color);
+	color: var(--secondary-text-color);
+}
+
+.nav-button {
+	border: 1px solid var(--secondary-color);
+	border-radius: 2em;
+	background: white;
+	color: var(--primary-text-color);
+}
