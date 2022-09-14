@@ -1,0 +1,64 @@
+:root {
+    --footer-height: 400px;
+}
+
+body {
+    position: relative;
+}
+
+.scrolling-container {
+    padding-bottom: var(--footer-height);
+}
+
+footer {
+    color: white;
+    background-color: #333333;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: var(--footer-height);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 5%;
+    column-gap: 2rem;
+}
+
+.row a {
+    color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+
+.mb-2 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.mb-2 a, 
+.mt-5 a {
+    display: flex;
+    align-items: center;
+}
+
+.text-white {
+    padding-left: .5rem;
+}
+
+.nav-item, 
+.mt-5 a {
+    padding: 1rem 0;
+}
+
+.footer-menu-title {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
