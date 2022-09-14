@@ -1,16 +1,16 @@
-const menuButton = document.querySelector(".menu_btn");
+const menuButton = document.querySelector(".menu-btn");
 const backdrop = document.querySelector(".backdrop");
 const navigationBar = document.querySelector(".navigation");
 const closeNavigation = document.querySelector(".navigation-close-btn");
 
 const openMenu = () => {
-    navigationBar.style.right = 0;
-    backdrop.style.display = "inline";
+    navigationBar.className = "navigation active";
+    backdrop.className = "backdrop active"
 }
 
 const closeMenu = () => {
-    navigationBar.style.right = "-20vw";
-    backdrop.style.display = "none";
+    navigationBar.className = "navigation";
+    backdrop.className = "backdrop"
 }
 
 menuButton.addEventListener("click", (e) => {
@@ -19,6 +19,11 @@ menuButton.addEventListener("click", (e) => {
 })
 
 closeNavigation.addEventListener("click", (e) => {
+    e.preventDefault();
+    closeMenu();
+})
+
+backdrop.addEventListener("click", (e) => {
     e.preventDefault();
     closeMenu();
 })
